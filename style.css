@@ -1,0 +1,73 @@
+/* General Body Styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the body fills the entire viewport height */
+    margin: 0; /* Remove default margin */
+    background-image: url("https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover; /* Make sure background covers the entire body */
+    background-position: center; /* Center the background */
+}
+
+/* Container Styling */
+.container {
+    background-color: whitesmoke;
+    text-align: center;
+    max-width: 400px;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Flexbox for Input and Button */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* City Input Styling */
+.city-input {
+    border-radius: 50px 0 0 50px;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    width: 70%; /* Adjust width */
+    outline: none; /* Remove outline on focus */
+}
+
+/* Search Button Styling */
+.search-btn {
+    border-radius: 0 50px 50px 0;
+    font-size: medium;
+    background-color: aquamarine;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Search Button Hover Effect */
+.search-btn:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+/* Weather Div */
+#weather-div {
+    display: none; /* Hide by default */
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+#temp-id {
+    font-size: 2rem;
+    color: darkblue;
+}
+
+#temp-value {
+    font-size: 1.5rem;
+    color: darkslategray;
+}
